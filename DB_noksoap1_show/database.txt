@@ -1,0 +1,19 @@
+CREATE TABLE `member` (
+`MemberID` int(2) NOT NULL auto_increment,
+`Username` varchar(50) NOT NULL,
+`Password` varchar(50) NOT NULL,
+`Name` varchar(50) NOT NULL,
+`Tel` varchar(50) NOT NULL,
+`Email` varchar(150) NOT NULL,
+PRIMARY KEY (`MemberID`),
+UNIQUE KEY `Username` (`Username`),
+UNIQUE KEY `Email` (`Email`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+-- 
+-- Dumping data for table `member`
+-- 
+
+INSERT INTO `member` VALUES (1, 'prakit', 'prakit@1', 'prakit porkusuwan', '0868278524', 'prakit@hotmail.com');
+INSERT INTO `member` VALUES (2, 'somsak', 'somsak@2', 'somsak hongchai', '0877646545', 'somsak@google.com');
+INSERT INTO `member` VALUES (3, 'somying', 'somying@3', 'somying siangsanao', '0865243434', 'somying@yahoo.com');
